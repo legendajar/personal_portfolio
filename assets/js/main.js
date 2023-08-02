@@ -17,12 +17,27 @@ let modal = function(modalClick){
 
 modalBtns.forEach((mb, i)=>{
     mb.addEventListener('click',() =>{
-        modal(i)
+        modal(i);
+    })
+})
+
+modalClose.forEach((mc) => {
+    mc.addEventListener('click',() => {
+        modalViews.forEach((mv) => {
+            mv.classList.remove('active-modal')
+        })
     })
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortfolio = mixitup('.work__conatiner', {
+    selectors:{
+        target: '.work__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /* Link active work */ 
 
