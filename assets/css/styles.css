@@ -665,6 +665,8 @@ body.light-theme{
 .work__img{
   border-radius: 1rem;
   margin-bottom: 0.75rem;
+  width: 269px;
+  height: 168px;
 }
 
 .work__title{
